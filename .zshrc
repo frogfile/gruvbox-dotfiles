@@ -91,11 +91,11 @@ alias umu-spacewar='WINEPREFIX="/home/lapepega/Games/480" WINEDLLOVERRIDES="Onli
 
 alias gitfuck='git add -A && git commit -m $(date +%Y-%m-%d) && git push'
 
-alias ytdl='yt-dlp --proxy "socks://127.0.0.1:1080" --embed-chapters --embed-subs --output-na-placeholder "00" --format "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" --output "%(playlist_index)s. %(title)s .%(ext)s"'
-alias ytdl-mp3='yt-dlp --proxy "socks://127.0.0.1:1080" --embed-chapters --embed-subs --output-na-placeholder "00" --extract-audio --audio-format mp3 --audio-quality 0 --output "%(playlist_index)s. %(title)s .%(ext)s"'
-alias ytdl-plist='yt-dlp --proxy "socks://127.0.0.1:1080" --embed-chapters --embed-subs --output-na-placeholder "00" --format "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" --output "%(playlist)s/%(playlist_index)s. %(title)s .%(ext)s"'
-alias ytdl-plist-mp3='yt-dlp --proxy "socks://127.0.0.1:1080" --embed-chapters --embed-subs --output-na-placeholder "00" --extract-audio --audio-format mp3 --audio-quality 0 --output "%(playlist)s/%(playlist_index)s. %(title)s .%(ext)s"'
-alias ytdl-topic='yt-dlp --proxy "socks://127.0.0.1:1080" --embed-chapters --embed-subs --output-na-placeholder "00" --extract-audio --audio-format mp3 --audio-quality 0 --output "%(artist)s/%(album)s/%(playlist_index)s. %(title)s .%(ext)s"'
+alias ytdl='yt-dlp --proxy "socks://127.0.0.1:1080" --embed-chapters --embed-metadata --embed-subs  --embed-thumbnail --convert-thumbnails jpg --output-na-placeholder "00" --format "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" --output "%(playlist_index)s. %(title)s .%(ext)s"'
+alias ytdl-mp3='yt-dlp --proxy "socks://127.0.0.1:1080" --embed-chapters --embed-metadata  --embed-thumbnail --convert-thumbnails jpg --output-na-placeholder "00" --extract-audio --audio-format mp3 --audio-quality 0 --output "%(playlist_index)s. %(title)s .%(ext)s"'
+alias ytdl-plist='yt-dlp --proxy "socks://127.0.0.1:1080" --embed-chapters --embed-metadata  --embed-thumbnail --convert-thumbnails jpg --embed-subs --output-na-placeholder "00" --format "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" --output "%(playlist)s/%(playlist_index)s. %(title)s .%(ext)s"'
+alias ytdl-plist-mp3='yt-dlp --proxy "socks://127.0.0.1:1080" --embed-chapters --embed-metadata --embed-thumbnail --convert-thumbnails jpg --output-na-placeholder "00" --extract-audio --audio-format mp3 --audio-quality 0 --output "%(playlist)s/%(playlist_index)s. %(title)s .%(ext)s"'
+alias ytdl-topic='yt-dlp --proxy "socks://127.0.0.1:1080" --embed-chapters  --embed-metadata --embed-thumbnail --convert-thumbnails jpg --output-na-placeholder "00" --extract-audio --audio-format mp3 --audio-quality 0 --output "%(artist)s/%(album)s/%(playlist_index)s. %(title)s .%(ext)s"'
 
 fnd() { doas find / -name $@}
 mkcd() { mkdir $1 && cd $1; }
