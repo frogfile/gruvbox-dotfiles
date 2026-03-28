@@ -1,5 +1,5 @@
 # Dotfiles
-My arch linux bspwm gruvbox rice.
+My old, archived arch linux bspwm gruvbox rice.
 
 ## Screenshots
 
